@@ -1,6 +1,9 @@
 #include <iostream>
 #include "InsertionSortRecursive.hpp"
 #include "InsertionSort.hpp"
+#include "Task2_3_7.hpp"
+#include "MergeSort.hpp"
+#include "FindMaximumSubarray.hpp"
 
 using namespace std;
 
@@ -36,10 +39,58 @@ void testInsertionSort()
     cout << "\n";
 }
 
+void testMergeSort()
+{
+    const int size = 8;
+    
+    int A[size] = {2,4,5,7,1,2,3,6};
+    
+    MergeSort::calculate(A, 0, size - 1);
+    
+    for (int i = 0; i < size; ++i)
+    {
+        cout << A[i] << " ";
+    }
+    
+    cout << "\n";
+}
+
+void test2_3_7()
+{
+    const int size = 10;
+    
+    int A[size] = {6,4,5,3,7,8,1,2,0,9};
+    
+    bool result = Task2_3_7::calculate(A, size, 100);
+    
+    for (int i = 0; i < size; ++i)
+    {
+        cout << A[i] << " ";
+    }
+    
+    cout << "\n";
+    
+    cout << "result=" << (result ? "yes" : "no") << "\n";
+}
+
+void testFindMaximumSubarray()
+{
+    const int size = 16;
+    
+    int A[size] = {13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7};
+    
+    auto result = FindMaximumSubarray::calculate(A, 0, size-1);
+    
+    cout  << "leftIndex=" << get<LeftIndex>(result) << " rightIndex=" << get<RightIndex>(result) << " Sum=" << get<Sum>(result) << "\n";
+}
+
 int main()
 {
-    testInsertionSort();
-    testInsertionSortRecursive();
+    //testInsertionSort();
+    //testInsertionSortRecursive();
+    //test2_3_7();
+    //testMergeSort();
+    testFindMaximumSubarray();
     
     return 0;
 }

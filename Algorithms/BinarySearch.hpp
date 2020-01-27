@@ -15,6 +15,6 @@ class BinarySearch
 {
 public:
     static int calculate(int *array, int size, int searchingElement);
-}
+};
 
 #endif /* BinarySearch_hpp */

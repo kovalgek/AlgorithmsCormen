@@ -9,25 +9,27 @@
 #include "MergeSort.hpp"
 #include <iostream>
 
+using namespace std;
+
 /// Order of growth is Θ(n*lg(n))
 /// middleIndex is index of last element of left array. That's why second call is
 /// sortArray(array, middleIndex + 1, rightIndex) and why left array size is
 /// int leftArraySize = middleIndex - leftIndex + 1;
-void MergeSort::sortArray(int *array, int leftIndex, int rightIndex)
+void MergeSort::calculate(int *array, int leftIndex, int rightIndex)
 {
     if (leftIndex < rightIndex)
     {
-        int middleIndex = (rightIndex - leftIndex) / 2;
+        int middleIndex = (rightIndex + leftIndex) / 2;
         // recursion call for left half
-        sortArray(array, leftIndex, middleIndex);
+        calculate(array, leftIndex, middleIndex);
         // recursion call for right half
-        sortArray(array, middleIndex + 1, rightIndex);
+        calculate(array, middleIndex + 1, rightIndex);
         // merge results
-        calculate(array, leftIndex, middleIndex, rightIndex);
+        merge(array, leftIndex, middleIndex, rightIndex);
     }
 }
 
-void MergeSort::calculate(int *array, int leftIndex, int middleIndex, int rightIndex)
+void MergeSort::merge(int *array, int leftIndex, int middleIndex, int rightIndex)
 {
     int leftArraySize = middleIndex - leftIndex + 1;
     int rightArraySize = rightIndex - middleIndex;
@@ -38,12 +40,12 @@ void MergeSort::calculate(int *array, int leftIndex, int middleIndex, int rightI
     
     for (int i = 0; i < leftArraySize; ++i)
     {
-        leftArray[i] = array[leftIndex+i];
+        leftArray[i] = array[leftIndex + i];
     }
     
-    for (int i = 0; i < leftArraySize; ++i)
+    for (int i = 0; i < rightArraySize; ++i)
     {
-        rightArray[i] = array[middleIndex + 1 + i];
+        rightArray[i] = array[middleIndex + i + 1];
     }
     
     // add sentinel elements
@@ -54,9 +56,9 @@ void MergeSort::calculate(int *array, int leftIndex, int middleIndex, int rightI
     int rightArrayIndex = 0;
     
     // merge two sorted arrays into one
-    for (int arrayIndex = leftIndex; arrayIndex < rightIndex; ++arrayIndex)
+    for (int arrayIndex = leftIndex; arrayIndex <= rightIndex; ++arrayIndex)
     {
-        if (leftArray[leftArrayIndex] < rightArray[leftArrayIndex])
+        if (leftArray[leftArrayIndex] <= rightArray[rightArrayIndex])
         {
             array[arrayIndex] = leftArray[leftArrayIndex];
             ++leftArrayIndex;

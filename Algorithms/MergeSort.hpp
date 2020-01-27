@@ -13,9 +13,9 @@
 
 class MergeSort
 {
-    static void sortArray(int *array, int leftIndex, int rightIndex);
+    static void merge(int *array, int leftIndex, int middleIndex, int rightIndex);
 public:
-    static void calculate(int *array, int leftIndex, int middleIndex, int rightIndex);
+    static void calculate(int *array, int leftIndex, int rightIndex);
 };
 
 #endif /* Algorythms_hpp */

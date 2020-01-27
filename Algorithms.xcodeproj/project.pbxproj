@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72A433DE23DDCB9B00D665E1 /* FindMaximumSubarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72A433DC23DDCB9B00D665E1 /* FindMaximumSubarray.cpp */; };
 		72DDAE7523C2816F00486C78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DDAE7423C2816F00486C78 /* main.cpp */; };
 		72DDAE7F23C7E22000486C78 /* MergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DDAE7E23C7E22000486C78 /* MergeSort.cpp */; };
 		72DDAE8223C939C900486C78 /* SelectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DDAE8023C939C900486C78 /* SelectionSort.cpp */; };
@@ -15,6 +16,7 @@
 		72DDAE8B23CA43BC00486C78 /* LinearSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DDAE8923CA43BC00486C78 /* LinearSearch.cpp */; };
 		72DDAE8E23CA441D00486C78 /* BinarySearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DDAE8C23CA441C00486C78 /* BinarySearch.cpp */; };
 		72DDAE9123CA466400486C78 /* BubbleSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DDAE8F23CA466400486C78 /* BubbleSort.cpp */; };
+		72DDAE9423CFAE4500486C78 /* Task2_3_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DDAE9223CFAE4500486C78 /* Task2_3_7.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		72A433DC23DDCB9B00D665E1 /* FindMaximumSubarray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindMaximumSubarray.cpp; sourceTree = "<group>"; };
+		72A433DD23DDCB9B00D665E1 /* FindMaximumSubarray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FindMaximumSubarray.hpp; sourceTree = "<group>"; };
 		72DDAE7123C2816F00486C78 /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DDAE7423C2816F00486C78 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		72DDAE7C23C7DE5A00486C78 /* MergeSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MergeSort.hpp; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		72DDAE8D23CA441D00486C78 /* BinarySearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearch.hpp; sourceTree = "<group>"; };
 		72DDAE8F23CA466400486C78 /* BubbleSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSort.cpp; sourceTree = "<group>"; };
 		72DDAE9023CA466400486C78 /* BubbleSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BubbleSort.hpp; sourceTree = "<group>"; };
+		72DDAE9223CFAE4500486C78 /* Task2_3_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Task2_3_7.cpp; sourceTree = "<group>"; };
+		72DDAE9323CFAE4500486C78 /* Task2_3_7.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Task2_3_7.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,10 @@
 				72DDAE8C23CA441C00486C78 /* BinarySearch.cpp */,
 				72DDAE9023CA466400486C78 /* BubbleSort.hpp */,
 				72DDAE8F23CA466400486C78 /* BubbleSort.cpp */,
+				72DDAE9323CFAE4500486C78 /* Task2_3_7.hpp */,
+				72DDAE9223CFAE4500486C78 /* Task2_3_7.cpp */,
+				72A433DD23DDCB9B00D665E1 /* FindMaximumSubarray.hpp */,
+				72A433DC23DDCB9B00D665E1 /* FindMaximumSubarray.cpp */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -155,7 +165,9 @@
 			files = (
 				72DDAE8B23CA43BC00486C78 /* LinearSearch.cpp in Sources */,
 				72DDAE8823CA398500486C78 /* InsertionSort.cpp in Sources */,
+				72A433DE23DDCB9B00D665E1 /* FindMaximumSubarray.cpp in Sources */,
 				72DDAE8223C939C900486C78 /* SelectionSort.cpp in Sources */,
+				72DDAE9423CFAE4500486C78 /* Task2_3_7.cpp in Sources */,
 				72DDAE9123CA466400486C78 /* BubbleSort.cpp in Sources */,
 				72DDAE7523C2816F00486C78 /* main.cpp in Sources */,
 				72DDAE8523CA384000486C78 /* InsertionSortRecursive.cpp in Sources */,
